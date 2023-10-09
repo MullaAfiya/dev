@@ -15,6 +15,12 @@ public class index {
     	
 		return "Hello";
     }
+
+	@RequestMapping("/")
+	public String welcome(HttpSession session) {
+    	
+		return "Deployment using Docker and K8s";
+    }
 	
 	@GetMapping("/AWS")
 	public String HelloAWS()
